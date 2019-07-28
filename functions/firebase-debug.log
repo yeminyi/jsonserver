@@ -1,0 +1,31 @@
+[debug] [2019-07-27T09:44:23.249Z] ----------------------------------------------------------------------
+[debug] [2019-07-27T09:44:23.252Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yemin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only=hosting --project taskmanager2019demo
+[debug] [2019-07-27T09:44:23.252Z] CLI Version:   7.2.1
+[debug] [2019-07-27T09:44:23.252Z] Platform:      win32
+[debug] [2019-07-27T09:44:23.252Z] Node Version:  v10.16.0
+[debug] [2019-07-27T09:44:23.255Z] Time:          Sat Jul 27 2019 19:44:23 GMT+1000 (GMT+10:00)
+[debug] [2019-07-27T09:44:23.255Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-27T09:44:23.261Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-27T09:44:23.262Z] > authorizing via signed-in user
+[debug] [2019-07-27T09:44:23.262Z] [iam] checking project taskmanager2019demo for permissions ["firebase.projects.get"]
+[debug] [2019-07-27T09:44:23.263Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/taskmanager2019demo:testIamPermissions  
+
+[debug] [2019-07-27T09:44:24.788Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-27T09:44:24.793Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskmanager2019demo  
+ 
+[debug] [2019-07-27T09:44:25.444Z] <<< HTTP RESPONSE 200
+[debug] [2019-07-27T09:44:25.447Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskmanager2019demo/webApps/-/config  
+ 
+[debug] [2019-07-27T09:44:25.999Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[info] [hosting] Rewriting /favicon.ico to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
+[info] [hosting] Rewriting /api to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
+[info] [hosting] Rewriting /api/ to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
+[info] [hosting] Rewriting /api/main.css to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
+[info] [hosting] Rewriting /api/main.js to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
+[info] [hosting] Rewriting /api/db to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
+[info] [hosting] Rewriting /api/__rules to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
+[info] [hosting] Rewriting /api/favicon.ico to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
+[info] [hosting] Rewriting /api/users to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
