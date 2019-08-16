@@ -4,15 +4,15 @@ const jsonServer = require('json-server')
 
 const main = jsonServer.create()
 const api = jsonServer.create()
-const router = jsonServer.router('db.json', { foreignKeySuffix: 'Id' })
+const router = jsonServer.router('./tmp/db.json', { foreignKeySuffix: 'Id' })
 const middlewares = jsonServer.defaults()
 
 router.render = function (req, res) {
-  var path = req.url.replace(/\/$/, '')
-  var resourceName = path.split('/')[1] // To get the resource, /people, /posts/
-  var last = path.split('/').pop() // To check if the path is resourceName or ID
-  var statusCode = res.statusCode
-  var json = {}
+  // var path = req.url.replace(/\/$/, '')
+  // var resourceName = path.split('/')[1] // To get the resource, /people, /posts/
+  // var last = path.split('/').pop() // To check if the path is resourceName or ID
+  // var statusCode = res.statusCode
+  // var json = {}
 
   // if (statusCode < 400) {
   //   var key = resourceName == last ? resourceName : pluralize.singular(resourceName)

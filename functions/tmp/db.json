@@ -71,7 +71,7 @@
   "projects": [
     {
       "id": "Sk2HaTagb",
-      "name": "问题跟踪系统",
+      "name": "问题跟踪系统111111",
       "desc": "用于 Bug 的内部跟踪和管理",
       "coverImg": "./assets/img/covers/1.jpg",
       "members": [
@@ -81,7 +81,7 @@
       "taskFilterId": "Bkm8XZcta-"
     },
     {
-      "name": "某某公司 ERP 系统wew",
+      "name": "某某公司 ERP 系统wew88888",
       "desc": "为某某公司开发的定制化 ERP 系统",
       "coverImg": "./assets/img/covers/20.jpg",
       "members": [
