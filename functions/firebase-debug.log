@@ -1,393 +1,49 @@
-[debug] [2019-07-27T09:44:23.249Z] ----------------------------------------------------------------------
-[debug] [2019-07-27T09:44:23.252Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yemin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only=hosting --project taskmanager2019demo
-[debug] [2019-07-27T09:44:23.252Z] CLI Version:   7.2.1
-[debug] [2019-07-27T09:44:23.252Z] Platform:      win32
-[debug] [2019-07-27T09:44:23.252Z] Node Version:  v10.16.0
-[debug] [2019-07-27T09:44:23.255Z] Time:          Sat Jul 27 2019 19:44:23 GMT+1000 (GMT+10:00)
-[debug] [2019-07-27T09:44:23.255Z] ----------------------------------------------------------------------
+[debug] [2019-08-16T11:05:02.377Z] ----------------------------------------------------------------------
+[debug] [2019-08-16T11:05:02.380Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yemin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions,hosting --project taskdemo2019
+[debug] [2019-08-16T11:05:02.380Z] CLI Version:   7.2.1
+[debug] [2019-08-16T11:05:02.380Z] Platform:      win32
+[debug] [2019-08-16T11:05:02.380Z] Node Version:  v10.16.0
+[debug] [2019-08-16T11:05:02.558Z] Time:          Fri Aug 16 2019 21:05:02 GMT+1000 (GMT+10:00)
+[debug] [2019-08-16T11:05:02.558Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-07-27T09:44:23.261Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-07-27T09:44:23.262Z] > authorizing via signed-in user
-[debug] [2019-07-27T09:44:23.262Z] [iam] checking project taskmanager2019demo for permissions ["firebase.projects.get"]
-[debug] [2019-07-27T09:44:23.263Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/taskmanager2019demo:testIamPermissions  
+[debug] [2019-08-16T11:05:02.581Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-16T11:05:02.582Z] > authorizing via signed-in user
+[debug] [2019-08-16T11:05:02.582Z] [iam] checking project taskdemo2019 for permissions ["firebase.projects.get"]
+[debug] [2019-08-16T11:05:02.583Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-16T11:05:02.583Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-16T11:05:04.464Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-16T11:05:04.586Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/taskdemo2019:testIamPermissions  
 
-[debug] [2019-07-27T09:44:24.788Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-27T09:44:24.793Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskmanager2019demo  
+[debug] [2019-08-16T11:05:06.642Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-16T11:05:06.644Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskdemo2019  
  
-[debug] [2019-07-27T09:44:25.444Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-27T09:44:25.447Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskmanager2019demo/webApps/-/config  
- 
-[debug] [2019-07-27T09:44:25.999Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-[info] [hosting] Rewriting /favicon.ico to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
-[info] [hosting] Rewriting /api to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
-[info] [hosting] Rewriting /api/ to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
-[info] [hosting] Rewriting /api/main.css to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
-[info] [hosting] Rewriting /api/main.js to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
-[info] [hosting] Rewriting /api/db to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
-[info] [hosting] Rewriting /api/__rules to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
-[info] [hosting] Rewriting /api/favicon.ico to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
-[info] [hosting] Rewriting /api/users to https://us-central1-taskmanager2019demo.cloudfunctions.net/main for live Function main
-[debug] [2019-08-16T09:15:28.397Z] ----------------------------------------------------------------------
-[debug] [2019-08-16T09:15:28.399Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yemin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions,hosting --project taskmanager2019demo
-[debug] [2019-08-16T09:15:28.399Z] CLI Version:   7.2.1
-[debug] [2019-08-16T09:15:28.400Z] Platform:      win32
-[debug] [2019-08-16T09:15:28.400Z] Node Version:  v10.16.0
-[debug] [2019-08-16T09:15:28.402Z] Time:          Fri Aug 16 2019 19:15:28 GMT+1000 (GMT+10:00)
-[debug] [2019-08-16T09:15:28.402Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-08-16T09:15:28.409Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-08-16T09:15:28.409Z] > authorizing via signed-in user
-[debug] [2019-08-16T09:15:28.409Z] [iam] checking project taskmanager2019demo for permissions ["firebase.projects.get"]
-[debug] [2019-08-16T09:15:28.410Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/taskmanager2019demo:testIamPermissions  
-
-[debug] [2019-08-16T09:15:30.418Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-16T09:15:30.422Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskmanager2019demo  
- 
-[debug] [2019-08-16T09:15:31.039Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-16T09:15:31.052Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskmanager2019demo/webApps/-/config  
+[debug] [2019-08-16T11:05:07.781Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-16T11:05:07.789Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskdemo2019/webApps/-/config  
  
 [warn] !  Your requested "node" version "8" doesn't match your global version "10"
-[debug] [2019-08-16T09:15:31.070Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskmanager2019demo/adminSdkConfig  
+[debug] [2019-08-16T11:05:07.837Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/taskdemo2019/adminSdkConfig  
  
-[debug] [2019-08-16T09:15:31.565Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-16T09:15:31.616Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-16T11:05:08.599Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-16T11:05:08.629Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000
 [info] +  functions: Emulator started at http://localhost:5001
-[info] i  functions: Watching "D:\firebase-json-server\functions" for Cloud Functions...
-[debug] [2019-08-16T09:15:32.336Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[debug] [2019-08-16T09:15:32.337Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:15:32.339Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:15:32.341Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:15:32.341Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] i  functions: Watching "D:\task-firebase\functions" for Cloud Functions...
+[debug] [2019-08-16T11:05:10.487Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\task-firebase\\functions","node_version":"10.16.0"}
+[debug] [2019-08-16T11:05:10.487Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
+[debug] [2019-08-16T11:05:10.528Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\task-firebase\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-08-16T11:05:10.556Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\task-firebase\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-08-16T11:05:10.558Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\task-firebase\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
 [warn] !  Error: ENOENT: no such file or directory, open '/tmp/db.json'
     at Object.openSync (fs.js:443:3)
     at writeFileSync (fs.js:1194:35)
-    at FileSync.read (D:\firebase-json-server\functions\node_modules\lowdb\adapters\FileSync.js:46:9)
-    at LodashWrapper.db.read (D:\firebase-json-server\functions\node_modules\lowdb\lib\main.js:32:21)
-    at module.exports (D:\firebase-json-server\functions\node_modules\lowdb\lib\main.js:51:13)
-    at Object.module.exports [as router] (D:\firebase-json-server\functions\node_modules\json-server\lib\server\router\index.js:34:10)
-    at Object.<anonymous> (D:\firebase-json-server\functions\index.js:7:27)
+    at FileSync.read (D:\task-firebase\functions\node_modules\lowdb\adapters\FileSync.js:46:9)
+    at LodashWrapper.db.read (D:\task-firebase\functions\node_modules\lowdb\lib\main.js:32:21)
+    at module.exports (D:\task-firebase\functions\node_modules\lowdb\lib\main.js:51:13)
+    at Object.module.exports [as router] (D:\task-firebase\functions\node_modules\json-server\lib\server\router\index.js:34:10)
+    at Object.<anonymous> (D:\task-firebase\functions\index.js:7:27)
     at Module._compile (internal/modules/cjs/loader.js:776:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
 [warn] !  We were unable to load your functions code. (see above)
-[info] [hosting] Rewriting /api to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:17:33.992Z] Accepted request GET /taskmanager2019demo/us-central1/main/api --> main
-[debug] [2019-08-16T09:17:35.618Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:17:35.619Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:17:35.621Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:17:35.623Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:17:35.624Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[warn] !  Error: ENOENT: no such file or directory, open '/tmp/db.json'
-    at Object.openSync (fs.js:443:3)
-    at writeFileSync (fs.js:1194:35)
-    at FileSync.read (D:\firebase-json-server\functions\node_modules\lowdb\adapters\FileSync.js:46:9)
-    at LodashWrapper.db.read (D:\firebase-json-server\functions\node_modules\lowdb\lib\main.js:32:21)
-    at module.exports (D:\firebase-json-server\functions\node_modules\lowdb\lib\main.js:51:13)
-    at Object.module.exports [as router] (D:\firebase-json-server\functions\node_modules\json-server\lib\server\router\index.js:34:10)
-    at Object.<anonymous> (D:\firebase-json-server\functions\index.js:7:27)
-    at Module._compile (internal/modules/cjs/loader.js:776:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-[warn] !  We were unable to load your functions code. (see above)
-[debug] [2019-08-16T09:18:25.130Z] File D:\firebase-json-server\functions\index.js changed, reloading triggers
-[debug] [2019-08-16T09:18:26.562Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[debug] [2019-08-16T09:18:26.562Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:18:26.565Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:18:26.567Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:18:26.567Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[info] +  functions: [http] function main initialized (http://localhost:5001/taskmanager2019demo/us-central1/main).
-[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:18:34.776Z] Accepted request GET /taskmanager2019demo/us-central1/main/favicon.ico --> main
-[debug] [2019-08-16T09:18:35.229Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:18:35.230Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:18:35.233Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:18:35.234Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:18:35.235Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:18:35.422Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:18:35.422Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:18:35.423Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:18:35.429Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\20612"}
-[debug] [2019-08-16T09:18:35.430Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\20612"}
-[debug] [2019-08-16T09:18:35.436Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:18:35.442Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /api to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:19:00.631Z] Accepted request GET /taskmanager2019demo/us-central1/main/api --> main
-[debug] [2019-08-16T09:19:01.070Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:19:01.071Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:19:01.074Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:19:01.075Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:01.076Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:01.265Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:19:01.265Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:19:01.265Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:19:01.271Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\29708"}
-[debug] [2019-08-16T09:19:01.272Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\29708"}
-[debug] [2019-08-16T09:19:01.278Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:19:01.282Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /taskmanager2019demo/us-central1/main/api/ to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:19:01.314Z] Accepted request GET /taskmanager2019demo/us-central1/main/taskmanager2019demo/us-central1/main/api/ --> main
-[debug] [2019-08-16T09:19:01.769Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:19:01.771Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:19:01.772Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:19:01.774Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:01.774Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:01.964Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:19:01.964Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:19:01.964Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:19:01.970Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\11672"}
-[debug] [2019-08-16T09:19:01.971Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\11672"}
-[debug] [2019-08-16T09:19:01.976Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:19:02.001Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /taskmanager2019demo/us-central1/main/api/ to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:19:35.147Z] Accepted request GET /taskmanager2019demo/us-central1/main/taskmanager2019demo/us-central1/main/api/ --> main
-[debug] [2019-08-16T09:19:35.665Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:19:35.666Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:19:35.669Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:19:35.671Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:35.671Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:35.862Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:19:35.862Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:19:35.862Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:19:35.872Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\11064"}
-[debug] [2019-08-16T09:19:35.873Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\11064"}
-[debug] [2019-08-16T09:19:35.879Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:19:35.901Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:19:40.785Z] Accepted request GET /taskmanager2019demo/us-central1/main/favicon.ico --> main
-[debug] [2019-08-16T09:19:41.303Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:19:41.304Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:19:41.307Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:19:41.309Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:41.309Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:41.491Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:19:41.492Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:19:41.492Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:19:41.498Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\7668"}
-[debug] [2019-08-16T09:19:41.499Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\7668"}
-[debug] [2019-08-16T09:19:41.504Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:19:41.511Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /api to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:19:42.947Z] Accepted request GET /taskmanager2019demo/us-central1/main/api --> main
-[debug] [2019-08-16T09:19:43.423Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:19:43.424Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:19:43.426Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:19:43.428Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:43.429Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:43.619Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:19:43.619Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:19:43.619Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:19:43.625Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\5564"}
-[debug] [2019-08-16T09:19:43.626Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\5564"}
-[debug] [2019-08-16T09:19:43.632Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:19:43.636Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /taskmanager2019demo/us-central1/main/api/ to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:19:43.670Z] Accepted request GET /taskmanager2019demo/us-central1/main/taskmanager2019demo/us-central1/main/api/ --> main
-[debug] [2019-08-16T09:19:44.221Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:19:44.222Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:19:44.225Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:19:44.227Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:44.227Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:19:44.415Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:19:44.416Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:19:44.416Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:19:44.425Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\22984"}
-[debug] [2019-08-16T09:19:44.426Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\22984"}
-[debug] [2019-08-16T09:19:44.432Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:19:44.448Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[debug] [2019-08-16T09:25:49.828Z] File D:\firebase-json-server\functions\index.js changed, reloading triggers
-[debug] [2019-08-16T09:25:51.274Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[debug] [2019-08-16T09:25:51.274Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:25:51.278Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:25:51.279Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:25:51.280Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:26:58.780Z] File D:\firebase-json-server\functions\index.js changed, reloading triggers
-[debug] [2019-08-16T09:27:00.193Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[debug] [2019-08-16T09:27:00.193Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:27:00.196Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:27:00.198Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:27:00.198Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[info] [hosting] Rewriting /taskmanager2019demo/us-central1/main/api/ to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:27:36.962Z] Accepted request GET /taskmanager2019demo/us-central1/main/taskmanager2019demo/us-central1/main/api/ --> main
-[debug] [2019-08-16T09:27:37.420Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:27:37.421Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:27:37.424Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:27:37.425Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:27:37.426Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:27:37.611Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:27:37.611Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:27:37.611Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:27:37.617Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\10304"}
-[debug] [2019-08-16T09:27:37.618Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\10304"}
-[debug] [2019-08-16T09:27:37.623Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:27:37.633Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /taskmanager2019demo/us-central1/main/api/ to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:27:41.494Z] Accepted request GET /taskmanager2019demo/us-central1/main/taskmanager2019demo/us-central1/main/api/ --> main
-[debug] [2019-08-16T09:27:41.974Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:27:41.976Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:27:41.978Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:27:41.979Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:27:41.980Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:27:42.165Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:27:42.165Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:27:42.165Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:27:42.174Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\14292"}
-[debug] [2019-08-16T09:27:42.175Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\14292"}
-[debug] [2019-08-16T09:27:42.181Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:27:42.189Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:27:53.465Z] Accepted request GET /taskmanager2019demo/us-central1/main/favicon.ico --> main
-[debug] [2019-08-16T09:27:54.047Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:27:54.048Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:27:54.051Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:27:54.052Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:27:54.053Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:27:54.242Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:27:54.242Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:27:54.242Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:27:54.249Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\10208"}
-[debug] [2019-08-16T09:27:54.250Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\10208"}
-[debug] [2019-08-16T09:27:54.256Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:27:54.263Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:28:05.778Z] Accepted request GET /taskmanager2019demo/us-central1/main/favicon.ico --> main
-[debug] [2019-08-16T09:28:06.264Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:28:06.265Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:28:06.268Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:28:06.270Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:28:06.270Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:28:06.457Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:28:06.458Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:28:06.458Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:28:06.464Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\36564"}
-[debug] [2019-08-16T09:28:06.464Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\36564"}
-[debug] [2019-08-16T09:28:06.470Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:28:06.480Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /api to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:28:08.484Z] Accepted request GET /taskmanager2019demo/us-central1/main/api --> main
-[debug] [2019-08-16T09:28:08.946Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:28:08.948Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:28:08.950Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:28:08.951Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:28:08.952Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:28:09.134Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:28:09.134Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:28:09.134Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:28:09.143Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\5796"}
-[debug] [2019-08-16T09:28:09.143Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\5796"}
-[debug] [2019-08-16T09:28:09.148Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:28:09.153Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /taskmanager2019demo/us-central1/main/api/ to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:28:09.196Z] Accepted request GET /taskmanager2019demo/us-central1/main/taskmanager2019demo/us-central1/main/api/ --> main
-[debug] [2019-08-16T09:28:09.702Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:28:09.704Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:28:09.706Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:28:09.708Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:28:09.708Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:28:09.898Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:28:09.898Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:28:09.898Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:28:09.904Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\3464"}
-[debug] [2019-08-16T09:28:09.905Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\3464"}
-[debug] [2019-08-16T09:28:09.912Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:28:09.921Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /taskmanager2019demo/us-central1/main/api/ to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:30:00.513Z] Accepted request GET /taskmanager2019demo/us-central1/main/taskmanager2019demo/us-central1/main/api/ --> main
-[debug] [2019-08-16T09:30:00.957Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:30:00.959Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:30:00.961Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:30:00.962Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:30:00.963Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:30:01.144Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:30:01.144Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:30:01.145Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:30:01.151Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\22812"}
-[debug] [2019-08-16T09:30:01.152Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\22812"}
-[debug] [2019-08-16T09:30:01.159Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:30:01.171Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[debug] [2019-08-16T09:30:19.058Z] File D:\firebase-json-server\functions\index.js changed, reloading triggers
-[debug] [2019-08-16T09:30:20.511Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[debug] [2019-08-16T09:30:20.511Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:30:20.515Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:30:20.516Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:30:20.517Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[info] [hosting] Rewriting /taskmanager2019demo/us-central1/main/api/ to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:30:25.202Z] Accepted request GET /taskmanager2019demo/us-central1/main/taskmanager2019demo/us-central1/main/api/ --> main
-[debug] [2019-08-16T09:30:25.721Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:30:25.723Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:30:25.726Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:30:25.728Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:30:25.729Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:30:25.924Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:30:25.925Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:30:25.925Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:30:25.934Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\34220"}
-[debug] [2019-08-16T09:30:25.935Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\34220"}
-[debug] [2019-08-16T09:30:25.941Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:30:25.948Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /taskmanager2019demo/us-central1/main/api/ to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:32:10.428Z] Accepted request GET /taskmanager2019demo/us-central1/main/taskmanager2019demo/us-central1/main/api/ --> main
-[debug] [2019-08-16T09:32:11.009Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:32:11.010Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:32:11.012Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:32:11.014Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:32:11.015Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:32:11.201Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:32:11.201Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:32:11.201Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:32:11.207Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\26368"}
-[debug] [2019-08-16T09:32:11.208Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\26368"}
-[debug] [2019-08-16T09:32:11.213Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:32:11.225Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
-[info] [hosting] Rewriting /taskmanager2019demo/us-central1/main/api/ to http://localhost:5001/taskmanager2019demo/us-central1/main for local Function main
-[debug] [2019-08-16T09:33:09.028Z] Accepted request GET /taskmanager2019demo/us-central1/main/taskmanager2019demo/us-central1/main/api/ --> main
-[debug] [2019-08-16T09:33:09.685Z] [runtime-status] Functions runtime initialized. {"cwd":"D:\\firebase-json-server\\functions","node_version":"10.16.0"}
-[info] i  functions: Beginning execution of "main"
-[debug] [2019-08-16T09:33:09.686Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true} {}
-[debug] [2019-08-16T09:33:09.689Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.3.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
-[debug] [2019-08-16T09:33:09.690Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:33:09.691Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"D:\\firebase-json-server\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
-[debug] [2019-08-16T09:33:09.896Z] [runtime-status] Trigger "main" has been found, beginning invocation! {}
-[debug] [2019-08-16T09:33:09.896Z] [runtime-status]  {"httpsTrigger":{},"name":"main","entryPoint":"main"}
-[debug] [2019-08-16T09:33:09.896Z] [runtime-status] Running main in mode HTTPS {}
-[debug] [2019-08-16T09:33:09.902Z] {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\17928"}
-[debug] [2019-08-16T09:33:09.904Z] [functions] Runtime ready! Sending request! {"socketPath":"\\\\?\\pipe\\D:\\firebase-json-server\\functions\\17928"}
-[debug] [2019-08-16T09:33:09.909Z] [runtime-status] Ephemeral server used! {}
-[debug] [2019-08-16T09:33:09.916Z] [runtime-status] Ephemeral server survived. {}
-[info] i  functions: Finished "main" in ~1s
